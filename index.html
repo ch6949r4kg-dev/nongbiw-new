@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Nongbiw ♡</title>
+
+<style>
+*{box-sizing:border-box}
+
+body{
+  margin:0;
+  font-family:Arial,sans-serif;
+  background:linear-gradient(135deg,#ffe4ef,#fff5fa,#ffd6e8);
+  color:#d94f8b;
+  text-align:center;
+  padding:24px 14px;
+  position:relative;
+  overflow-x:hidden;
+}
+
+/* ดาวจำนวนมาก */
+.glow-bg{
+  position:fixed;
+  inset:0;
+  overflow:hidden;
+  pointer-events:none;
+  z-index:0;
+}
+
+.glow{
+  position:absolute;
+  width:14px;
+  height:14px;
+  animation:floatGlow 3s ease-in-out infinite;
+  color:#ff3f9f;
+  font-size:22px;
+  font-weight:bold;
+  text-shadow:
+    0 0 6px #ff3f9f,
+    0 0 14px #ff3f9f,
+    0 0 25px #ff73b7,
+    0 0 40px #ffb6d8;
+}
+
+.glow::before{
+  content:"✦";
+}
+
+.glow.white{
+  color:white;
+  text-shadow:
+    0 0 6px white,
+    0 0 14px white,
+    0 0 25px #ffeaf5,
+    0 0 40px #ffc8e2;
+}
+
+/* ดาวขึ้นลงเร็ว */
+@keyframes floatGlow{
+  0%,100%{
+    transform:translateY(0) translateX(0) rotate(0deg) scale(1);
+    opacity:.65;
+  }
+
+  50%{
+    transform:translateY(-45px) translateX(20px) rotate(20deg) scale(1.5);
+    opacity:1;
+  }
+}
+
+.container{
+  max-width:460px;
+  margin:auto;
+  position:relative;
+  z-index:1;
+}
+
+h1{
+  font-size:30px;
+  margin:12px 0;
+}
+
+.subtitle{
+  font-size:19px;
+  margin-bottom:24px;
+}
+
+.photo{
+  width:180px;
+  height:180px;
+  object-fit:cover;
+  border-radius:50%;
+  border:6px solid white;
+  box-shadow:0 5px 18px #e9a2c5;
+}
+
+.card{
+  background:#ffffffd9;
+  border:2px solid #ffc1dc;
+  border-radius:25px;
+  padding:20px;
+  margin:18px 0;
+  box-shadow:0 5px 14px #edb5cf55;
+}
+
+h2{
+  font-size:21px;
+  margin:4px 0 16px;
+}
+
+.contact{
+  display:flex;
+  align-items:center;
+  gap:14px;
+  text-align:left;
+  justify-content:center;
+  margin:10px 0;
+  flex-wrap:wrap;
+}
+
+.qr{
+  width:115px;
+  height:115px;
+  object-fit:contain;
+  border-radius:10px;
+  background:white;
+}
+
+a{
+  color:#d94f8b;
+  overflow-wrap:anywhere;
+  text-decoration:none;
+}
+
+.id{
+  font-size:17px;
+  font-weight:bold;
+}
+
+button{
+  background:#f58db8;
+  color:white;
+  border:0;
+  padding:12px 22px;
+  border-radius:25px;
+  font-size:16px;
+  cursor:pointer;
+  transition: transform 0.2s, background 0.2s;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+.music{
+  padding:14px;
+}
+
+.music h2{
+  margin:4px 0 5px;
+  font-size:18px;
+}
+
+.music p{
+  font-size:13px;
+  margin:5px 0 12px;
+}
+
+.music-btn {
+  background: #ff69b4;
+  font-weight: bold;
+  box-shadow: 0 3px 10px rgba(255, 105, 180, 0.4);
+}
+
+.heart{
+  font-size:22px;
+}
+
+footer{
+  font-size:13px;
+  padding:12px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- ดาวจำนวนมาก -->
+<div class="glow-bg">
+  <span class="glow pink" style="left:3%;top:8%;animation-delay:0s"></span>
+  <span class="glow white" style="left:12%;top:18%;animation-delay:.5s"></span>
+  <span class="glow pink" style="left:21%;top:7%;animation-delay:1s"></span>
+  <span class="glow white" style="left:31%;top:25%;animation-delay:1.5s"></span>
+  <span class="glow pink" style="left:42%;top:12%;animation-delay:2s"></span>
+  <span class="glow white" style="left:53%;top:5%;animation-delay:2.5s"></span>
+  <span class="glow pink" style="left:64%;top:18%;animation-delay:3s"></span>
+  <span class="glow white" style="left:75%;top:8%;animation-delay:1s"></span>
+  <span class="glow pink" style="left:87%;top:22%;animation-delay:1.8s"></span>
+  <span class="glow white" style="left:96%;top:12%;animation-delay:2.8s"></span>
+
+  <span class="glow pink" style="left:6%;top:38%;animation-delay:1.2s"></span>
+  <span class="glow white" style="left:17%;top:48%;animation-delay:2.2s"></span>
+  <span class="glow pink" style="left:28%;top:40%;animation-delay:.8s"></span>
+  <span class="glow white" style="left:39%;top:55%;animation-delay:2.5s"></span>
+  <span class="glow pink" style="left:50%;top:43%;animation-delay:1.5s"></span>
+  <span class="glow white" style="left:61%;top:52%;animation-delay:3s"></span>
+  <span class="glow pink" style="left:72%;top:38%;animation-delay:.5s"></span>
+  <span class="glow white" style="left:83%;top:50%;animation-delay:2s"></span>
+  <span class="glow pink" style="left:94%;top:42%;animation-delay:1s"></span>
+
+  <span class="glow white" style="left:4%;top:68%;animation-delay:2.5s"></span>
+  <span class="glow pink" style="left:15%;top:78%;animation-delay:1s"></span>
+  <span class="glow white" style="left:26%;top:67%;animation-delay:3s"></span>
+  <span class="glow pink" style="left:37%;top:82%;animation-delay:1.5s"></span>
+  <span class="glow white" style="left:48%;top:72%;animation-delay:.5s"></span>
+  <span class="glow pink" style="left:59%;top:88%;animation-delay:2s"></span>
+  <span class="glow white" style="left:70%;top:75%;animation-delay:1.2s"></span>
+  <span class="glow pink" style="left:81%;top:85%;animation-delay:2.8s"></span>
+  <span class="glow white" style="left:92%;top:70%;animation-delay:.8s"></span>
+
+  <span class="glow pink" style="left:10%;top:92%;animation-delay:1.8s"></span>
+  <span class="glow white" style="left:33%;top:95%;animation-delay:2.4s"></span>
+  <span class="glow pink" style="left:55%;top:94%;animation-delay:.7s"></span>
+  <span class="glow white" style="left:76%;top:96%;animation-delay:1.4s"></span>
+  <span class="glow pink" style="left:89%;top:90%;animation-delay:2.6s"></span>
+</div>
+
+<div class="container">
+
+  <div class="heart">🎀 ♡ ✨ ♡ 🎀</div>
+
+  <img class="photo" src="IMG_2844.jpeg" alt="รูปบิว">
+
+  <h1>ช่องทางการติดต่อ</h1>
+
+  <div class="subtitle">♡ Nongbiw ♡</div>
+
+  <!-- LINE -->
+  <section class="card">
+    <h2>🎀 LINE 🎀</h2>
+    <div class="contact">
+      <img class="qr" src="IMG_2485.png" alt="QR Code LINE">
+      <div>
+        <div class="id">ID LINE</div>
+        <p>@282ppxul</p>
+        <a href="https://line.me/R/ti/p/@282ppxul" target="_blank">
+          <button>เพิ่มเพื่อน ♡</button>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Telegram -->
+  <section class="card">
+    <h2>🩵 Telegram 🩵</h2>
+    <div class="contact">
+      <img class="qr" src="IMG_2928.jpeg" alt="QR Code Telegram">
+      <div>
+        <div class="id">ID Telegram</div>
+        <p>@Sunitra1407</p>
+        <a href="https://t.me/Sunitra1407" target="_blank">
+          <button>ทัก Telegram ♡</button>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- เพลง -->
+  <section class="card music">
+    <h2>🎵 เพลง ธรรมดา 🎵</h2>
+    <p id="music-status">🎀 กำลังเปิดเพลงให้ค่ะ ♡</p>
+    
+    <button class="music-btn" id="toggle-music">⏸️ ปิดเพลง</button>
+
+    <audio id="my-audio" loop>
+      <source src="Nongbiw-music.mp3" type="audio/mpeg">
+    </audio>
+  </section>
+
+  <div class="heart">
+    ♡ ขอบคุณที่แวะมานะคะ ♡
+  </div>
+
+  <footer>
+    Made with love 🎀 Nongbiw
+  </footer>
+
+</div>
+
+<script>
+  const audio = document.getElementById('my-audio');
+  const btn = document.getElementById('toggle-music');
+  const statusText = document.getElementById('music-status');
+
+  // พยายามเล่นเพลงทันทีที่เข้าเว็บ
+  window.addEventListener('DOMContentLoaded', () => {
+    audio.play().then(() => {
+      statusText.innerText = "🎀 กำลังเปิดเพลงให้ค่ะ ♡";
+      btn.innerText = "⏸️ ปิดเพลง";
+    }).catch(err => {
+      // ถ้ามือถือบล็อก (กรณีเข้าครั้งแรก) จะเปลี่ยนข้อความให้แตะจอเพื่อเปิดเพลง
+      statusText.innerText = "🎀 แตะที่หน้าจอเพื่อเล่นเพลง ♡";
+      btn.innerText = "▶️ เปิดเพลง";
+    });
+  });
+
+  // ปุ่มกด เปิด/ปิด เพลง
+  btn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    if (audio.paused) {
+      audio.play().then(() => {
+        statusText.innerText = "🎀 กำลังเปิดเพลงให้ค่ะ ♡";
+        btn.innerText = "⏸️ ปิดเพลง";
+      });
+    } else {
+      audio.pause();
+      statusText.innerText = "🎀 ปิดเพลงอยู่ค่ะ ♡";
+      btn.innerText = "▶️ เปิดเพลง";
+    }
+  });
+
+  // ปลดล็อกการเล่นเพลงอัตโนมัติเมื่อมีการสัมผัสหน้าจอครั้งแรก
+  document.addEventListener('click', () => {
+    if (audio.paused && btn.innerText.includes("เปิดเพลง")) {
+      audio.play().then(() => {
+        statusText.innerText = "🎀 กำลังเปิดเพลงให้ค่ะ ♡";
+        btn.innerText = "⏸️ ปิดเพลง";
+      });
+    }
+  }, { once: true });
+</script>
+
+</body>
+</html>
